@@ -6,7 +6,6 @@ const Navbar = () => {
   return (
     <>
       <Nav>
-       
         <NavMenu>
           <NavLink to='/about' activeStyle>
             About
@@ -24,9 +23,6 @@ const Navbar = () => {
 };
 
 
-
-
-
  const Nav = styled.nav`
   background: #63D471;
   height: 85px;
@@ -39,7 +35,7 @@ const Navbar = () => {
   display: flex;
   align-items: center;
   text-decoration: None;
-  font-family: Roboto;
+  font-family: robotoitalic;
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
