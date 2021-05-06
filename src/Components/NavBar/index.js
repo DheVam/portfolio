@@ -6,7 +6,6 @@ const Navbar = () => {
   return (
     <>
       <Nav>
-       
         <NavMenu>
           <NavLink to='/about' activeStyle>
             ABOUT
@@ -24,9 +23,6 @@ const Navbar = () => {
 };
 
 
-
-
-
  const Nav = styled.nav`
  background:#3b3838;
  cursor: default;
@@ -42,8 +38,12 @@ const Navbar = () => {
   display: flex;
   align-items: center;
   text-decoration: None;
+<<<<<<< HEAD
   font-family: Roboto;
   font-size:12px;
+=======
+  font-family: robotoitalic;
+>>>>>>> 99c8822bf528d3b7ddd991fdcf18de4da6cacb81
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
