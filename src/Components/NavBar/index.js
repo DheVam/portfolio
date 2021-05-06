@@ -36,9 +36,7 @@ const Navbar = () => {
   justify-content: space-between;
   padding: 0.2rem calc((100vw - 1000px) / 2);
   z-index: 12;
-  /* Third Nav */
-  /* justify-content: flex-start; */
-`;
+ `;
   
  const NavLink = styled(Link)`
   color: #808080;
