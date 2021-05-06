@@ -14,7 +14,7 @@ const Footer = () =>{
 
 
 const FooterBg = styled.div`
-  background: #63D471;
+  background: #3b3838;
   height: 85px;
   width:100%;
   position:absolute;

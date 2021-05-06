@@ -9,13 +9,13 @@ const Navbar = () => {
        
         <NavMenu>
           <NavLink to='/about' activeStyle>
-            About
+            ABOUT
           </NavLink>
           <NavLink to='/blog' activeStyle>
-            Blog
+            BLOG
           </NavLink>
           <NavLink to='/skills' activeStyle>
-            Skills
+            SKILLS
           </NavLink>
          </NavMenu>
        </Nav>
@@ -28,23 +28,27 @@ const Navbar = () => {
 
 
  const Nav = styled.nav`
-  background: #63D471;
-  height: 85px;
-  display: flex;
-  justify-content: space-between;
+ background:#3b3838;
+ cursor: default;
+ width: auto;
+ height: 44px;
+ display: flex;
+ gr
+
   `;
   
  const NavLink = styled(Link)`
-  color: #808080;
+  color:#d6d4d4 ;
   display: flex;
   align-items: center;
   text-decoration: None;
   font-family: Roboto;
+  font-size:12px;
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
   &.active {
-    color: #000000;
+    color: #ffffff;
   }
 `;
   
@@ -53,6 +57,7 @@ const NavMenu = styled.div`
   align-items: center;
   margin-right: -24px;
   white-space: nowrap; 
+  grid-gap: 30px;
  `;
   
 export default Navbar;
