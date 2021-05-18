@@ -7,6 +7,9 @@ const Navbar = () => {
     <>
       <Nav>
         <NavMenu>
+          <NavLink to='/' activeStyle>
+            HOME
+          </NavLink>
           <NavLink to='/about' activeStyle>
             ABOUT
           </NavLink>
@@ -38,12 +41,7 @@ const Navbar = () => {
   display: flex;
   align-items: center;
   text-decoration: None;
-<<<<<<< HEAD
-  font-family: Roboto;
-  font-size:12px;
-=======
-  font-family: robotoitalic;
->>>>>>> 99c8822bf528d3b7ddd991fdcf18de4da6cacb81
+  font-family: robotobold;
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
@@ -55,7 +53,7 @@ const Navbar = () => {
 const NavMenu = styled.div`
   display: flex;
   align-items: center;
-  margin-right: -24px;
+  margin-left: 20px;
   white-space: nowrap; 
   grid-gap: 30px;
  `;
