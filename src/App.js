@@ -8,6 +8,7 @@ import about from './pages/about';
 import Blogs from './pages/blog';
 import Skills from './pages/skills';
 import Footer from './Components/footer'
+import ContactForm from './pages/Contact'
 
 
 function App() {
@@ -19,10 +20,11 @@ function App() {
         <Route path='/about' component={about}/>
         <Route path='/blog' component={Blogs} />
         <Route path='/skills' component={Skills}/>
+        <Route path='/Contact' component={ContactForm}/>
      </Switch>
       <Footer/>
     </Router>
   );
 }
 
-export default App;
+export default App; 
