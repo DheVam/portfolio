@@ -1,11 +1,13 @@
 import React from 'react';
 import { NavLink as Link } from 'react-router-dom';
 import styled from 'styled-components';
+import { FaBars } from 'react-icons/fa';
   
 const Navbar = () => {
   return (
     <>
       <Nav>
+        <Bars/>
         <NavMenu>
           <NavLink to='/' activeStyle>
             HOME
@@ -13,13 +15,16 @@ const Navbar = () => {
           <NavLink to='/about' activeStyle>
             ABOUT
           </NavLink>
-          <NavLink to='/blog' activeStyle>
-            BLOG
-          </NavLink>
           <NavLink to='/skills' activeStyle>
             SKILLS
           </NavLink>
-         </NavMenu>
+          <NavLink to='/blog' activeStyle>
+            BLOG
+          </NavLink>
+          <NavLink to='/Contact' activeStyle>
+            CONTACT
+          </NavLink>
+          </NavMenu>
        </Nav>
     </>
   );
@@ -32,10 +37,20 @@ const Navbar = () => {
  width: auto;
  height: 44px;
  display: flex;
- gr
-
-  `;
-  
+ `;
+ const Bars = styled(FaBars)`
+ display: none;
+ color: #808080;
+ @media screen and (max-width: 768px) {
+ display: block;
+ top: -12px;
+ right: 0;
+ transform: translate(-100%, 75%);
+ font-size: 1.8rem;
+ cursor: pointer;
+ position: absolute;
+  }
+`;
  const NavLink = styled(Link)`
   color:#d6d4d4 ;
   display: flex;
@@ -56,6 +71,9 @@ const NavMenu = styled.div`
   margin-left: 20px;
   white-space: nowrap; 
   grid-gap: 30px;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
  `;
-  
+    
 export default Navbar;
