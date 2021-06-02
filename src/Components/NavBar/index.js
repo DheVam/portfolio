@@ -32,7 +32,7 @@ const Navbar = () => {
 
 
  const Nav = styled.nav`
- background:#3b3838;
+ background: red;
  cursor: default;
  width: auto;
  height: 44px;
