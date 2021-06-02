@@ -62,6 +62,9 @@ margin-right: 10px;
 
 const Input = styled.input`
 width:300px;
+height:40px;
+border-radius: 4px;
+border-style: groove;
 @media(max-width:350px){
   width: 240px;
 }
@@ -71,7 +74,10 @@ margin-left:10%;
 `
 
 const Text = styled.textarea`
-
+width:300px;
+height:40px;
+border-radius: 4px;
+border-style: groove;
 `
 const NameDiv = styled.div`
 display: grid;
@@ -102,13 +108,20 @@ const WelcomeText = styled.div`
 const Container = styled.div`
 width: fit-content;
 display: flex;
+justify-content:center;
 flex-direction: column;
 margin-top: 30px;
 margin-right:30px;
 margin-left:30px;
-
+position: absolute;
+top:0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
 `
 const EmailContainer = styled.div`
+
 
 `
 
